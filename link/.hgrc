@@ -1,0 +1,7 @@
+[ui]
+# Name data to appear in commits
+username = Robert Smith <robert@elmatrak.me>
+ssh = ssh -C
+ignore = ~/.hgignore
+verbose = True
+editor = vim

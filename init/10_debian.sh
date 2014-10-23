@@ -2,7 +2,7 @@
 [[ "$(cat /etc/issue 2> /dev/null)" =~ Debian ]] || return 1
 
 # If the old files isn't removed, the duplicate APT alias will break sudo!
-sudoers_old="/etc/sudoers.d/sudoers-marcus"; [[ -e "$sudoers_old" ]] && sudo rm "$sudoers_old"
+sudoers_old="/etc/sudoers.d/sudoers-smithr"; [[ -e "$sudoers_old" ]] && sudo rm "$sudoers_old"
 
 # Installing this sudoers file makes life easier.
 sudoers_file="sudoers-dotfiles"
@@ -39,7 +39,7 @@ sudo apt-get -qq upgrade
 packages=(
   build-essential libssl-dev
   git-core
-  tree sl id3tool
+  tree
   nmap telnet
   htop
 )

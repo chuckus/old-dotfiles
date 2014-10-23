@@ -1,0 +1,14 @@
+set editing-mode vi
+set keymap vi
+set meta-flag on
+set input-meta on
+set output-meta on
+set convert-meta off
+set show-mode-in-prompt on
+$if mode=vi
+  set keymap vi-command
+  "i": vi-insertion-mode
+  set keymap vi-insert
+  "kj": vi-movement-mode
+$endif
+

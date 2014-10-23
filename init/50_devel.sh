@@ -55,6 +55,3 @@ if [[ "$(type -P gem)" ]]; then
   fi
 fi
 
-if [[ ! -f  ~/perl5/perlbrew/etc/bashrc ]]; then
-  ~/.dotfiles/bin/perlbrew
-fi

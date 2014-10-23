@@ -3,8 +3,8 @@ export PATH=~/.dotfiles/bin:$PATH
 ZSH=$HOME/.dotfiles/libs/oh-my-zsh
 
 # Set name of the theme to load.
-DEFAULT_USER='marcus'
-ZSH_THEME="agnoster"
+DEFAULT_USER='smithr'
+ZSH_THEME="pygmalion"
 
 # Set to this to use case-sensitive completion
 CASE_SENSITIVE="true"
@@ -17,7 +17,7 @@ DISABLE_UPDATE_PROMPT="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git tmuxinator rails osx git-hubflow github gem bundler brew cpanm nvm postgres rake rvm tmux ssh-agent vundle vi-mode)
+plugins=(git tmuxinator osx git-hubflow github gem bundler brew postgres tmux ssh-agent vundle vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -25,15 +25,24 @@ source $ZSH/oh-my-zsh.sh
 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
 
+# TODO: someone else config, might be vim related or efficient, look at some day
+# bindkey -v
+# bindkey -M vicmd "/" history-incremental-search-backward
+# bindkey '^R' history-incremental-search-backward
+# bindkey '^R' history-incremental-pattern-search-backward
+# bindkey '^[[A' up-line-or-search
+# bindkey '^[[B' down-line-or-search
+# bindkey '^?' backward-delete-char
+# bindkey '^h' backward-delete-char
+
 bindkey -v
-bindkey -M vicmd "/" history-incremental-search-backward
-bindkey '^R' history-incremental-search-backward
-bindkey '^R' history-incremental-pattern-search-backward
-bindkey '^[[A' up-line-or-search
-bindkey '^[[B' down-line-or-search
+bindkey '^P' up-history
+bindkey '^N' down-history
 bindkey '^?' backward-delete-char
 bindkey '^h' backward-delete-char
-
+bindkey '^w' backward-kill-word
+bindkey '^r' history-incremental-search-backward
+bindkey -M viins 'kj' vi-cmd-mode
 
 
 # Source all files in ~/.dotfiles/source/
@@ -55,6 +64,3 @@ function dotfiles() {
 
 src
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-alias mate=vim
-alias dokku="ssh stagolee dokku"

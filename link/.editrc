@@ -1,0 +1,3 @@
+bind -v
+bind kj vi-command-mode
+bind \\t rl_complete
