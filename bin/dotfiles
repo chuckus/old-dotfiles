@@ -1,14 +1,14 @@
 #!/bin/bash
 
-echo 'Dotfiles - marcusramberg-flavored'
-echo  'Cloned from "Cowboy" Ben Alman - http://benalman.com/'
+echo 'Dotfiles - elmatrak-flavored'
+echo  'Cloned from "Cowboy" Ben Alman - http://benalman.com/ and elmatrak'
 
 if [[ "$1" == "-h" || "$1" == "--help" ]]; then cat <<HELP
 
 Usage: $(basename "$0")
 
 See the README for documentation.
-https://github.com/marcusramberg/dotfiles
+https://github.com/elmatrak/dotfiles
 
 Copyright (c) 2012 "Cowboy" Ben Alman
 Licensed under the MIT license.
@@ -170,7 +170,7 @@ if [[ ! -d ~/.dotfiles ]]; then
   new_dotfiles_install=1
   # ~/.dotfiles doesn't exist? Clone it!
   e_header "Downloading dotfiles"
-  git clone --recursive git://github.com/marcusramberg/dotfiles.git ~/.dotfiles
+  git clone --recursive git://github.com/elmatrak/dotfiles.git ~/.dotfiles
   cd ~/.dotfiles
 else
   # Make sure we have the latest files.
