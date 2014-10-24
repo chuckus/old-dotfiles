@@ -66,3 +66,9 @@ if [[ ! "$(type -P git-extras)" ]]; then
     sudo make install
   )
 fi
+
+# Install GNOME terminal themes
+if [[ "$(type -P gnome-terminal)" ]]; then
+  e_header "Install gnome terminal themes"
+  cd ~/.dotfiles/conf
+fi
