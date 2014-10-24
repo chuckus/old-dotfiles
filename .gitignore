@@ -1,6 +1,5 @@
 caches/
 backups/
-libs/
 link/.ssh/authorized_keys
 link/.ssh/id_*
 link/.ssh/github*
