@@ -24,7 +24,7 @@
 	url = https://github.com/gmarik/Vundle.vim.git
 [submodule "libs/pyenv"]
 	path = libs/pyenv
-	url = git://github.com/yyuu/pyenv.git
+	url = https://github.com/yyuu/pyenv.git
 [submodule "libs/pyenv-virtualenvwrapper"]
 	path = libs/pyenv-virtualenvwrapper
-	url = git://github.com/yyuu/pyenv-virtualenvwrapper.git
+	url = https://github.com/yyuu/pyenv-virtualenvwrapper.git
