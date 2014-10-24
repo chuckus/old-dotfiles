@@ -9,8 +9,8 @@ link/.ssh/environment*
 link/.mutt/cache/
 link/.vim/bundle
 # ipython related
-history.sqlite
+*history.sqlite
 .ipynb_checkpoints
 *.log
-notebook_secret
+*notebook_secret
 *LOCAL*
