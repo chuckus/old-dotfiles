@@ -38,7 +38,7 @@ Notes:
 * You need to have installed [XCode Command Line Tools](https://developer.apple.com/downloads/index.action?=command%20line%20tools), which are available as a separate, optional (and _much smaller_) download from XCode.
 
 ```sh
-bash -c "$(curl -fsSL https://raw.github.com/marcusramberg/dotfiles/master/bin/dotfiles)" && source ~/.zshrc
+bash -c "$(curl -fsSL https://raw.github.com/elmatrak/dotfiles/master/bin/dotfiles)" && source ~/.zshrc
 ```
 
 ### Ubuntu
@@ -49,7 +49,7 @@ Notes:
 
 ```sh
 sudo apt-get -qq update && sudo apt-get -qq upgrade && sudo apt-get -qq install curl && echo &&
-bash -c "$(curl -fsSL https://raw.github.com/marcusramberg/dotfiles/master/bin/dotfiles)" && source ~/.zshrc
+bash -c "$(curl -fsSL https://raw.github.com/elmatrak/dotfiles/master/bin/dotfiles)" && source ~/.zshrc
 ```
 
 ## The "init" step
@@ -59,9 +59,7 @@ These things will be installed, but _only_ if they aren't already.
 * Homebrew
   * git
   * tree
-  * sl
   * lesspipe
-  * id3tool
   * nmap
   * git-extras
   * htop-osx
@@ -125,13 +123,9 @@ SVN repos display as **[rev1:rev2]** where rev1 and rev2 are:
 **rev1** last changed revision  
 **rev2** revision
 
-## Inspiration
-<https://github.com/gf3/dotfiles>  
-<https://github.com/mathiasbynens/dotfiles>  
-(and 15+ years of accumulated crap)
-
 ## License
+Copyright (c) 2014 Robert Smith
 Some parts Copyright (c) 2012 Marcus Ramberg
-Copyright (c) 2012 "Cowboy" Ben Alman  
+Some parts Copyright (c) 2012 "Cowboy" Ben Alman  
 Licensed under the MIT license.  
 <http://benalman.com/about/license/>
