@@ -22,3 +22,9 @@
 [submodule "link/.vim/bundle/vundle"]
 	path = link/.vim/bundle/vundle
 	url = https://github.com/gmarik/Vundle.vim.git
+[submodule "libs/pyenv"]
+	path = libs/pyenv
+	url = https://github.com/yyuu/pyenv
+[submodule "libs/pyenv-virtualenvwrapper"]
+	path = libs/pyenv-virtualenvwrapper
+	url = https://github.com/yyuu/pyenv-virtualenvwrapper.git

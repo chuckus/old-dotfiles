@@ -1,7 +1,5 @@
 export PATH
 
-export ACK_PAGER='less'
-
 # nave init.
 if [[ -f "$(which nave)" ]]; then
   nave_default="$(nave ls | awk '/^default/ {print $2}')"
@@ -100,8 +98,7 @@ if [[ -x "$(which rbenv)" && ! -n "$(which  _rbenv)" ]]; then
   eval "$(rbenv init -)"
 fi
 
-# Perl brew 
-source ~/perl5/perlbrew/etc/bashrc
-
-eval "$(hub alias -s)"
-
+# pyenv init.
+export PYENV_ROOT="$HOME/.dotfiles/libs/pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"

@@ -55,3 +55,18 @@ if [[ "$(type -P gem)" ]]; then
   fi
 fi
 
+# Install Python.
+if [[ "$(type -P pyenv)" ]]; then
+  versions=(2.7.8 3.4.2)
+
+  list="$(to_install "${python_versions[*]}" "$(pyenv whence python)")"
+  if [[ "$list" ]]; then
+    e_header "Installing Python versions: $list"
+    for version in $list; do pyenv install "$version"; done
+    [[ "$(echo "$list" | grep -w "${versions[0]}")" ]] && pyenv global "${versions[0]}"
+    pyenv rehash
+    ln -s ~/.dotfiles/libs/pyenv-virtualenvwrapper ~/.dotfiles/libs/pyenv/plugins  
+    source ~/.dotfiles/source/50_devel.sh
+    pyenv virtualenvwrapper
+  fi
+fi
