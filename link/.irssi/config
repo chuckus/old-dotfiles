@@ -272,6 +272,11 @@ settings = {
     real_name = "Charlie Smith";
     user_name = "elmatrak";
     nick = "elmatrak";
+    use_proxy = "yes";
+    proxy_address = "http://proxy.wno.mgnt";
+    proxy_port = "3128";
+    proxy_string = "CONNECT %s:%d HTTP/1.0\012\012";
+    proxy_string_after = "conn %s %d";
   };
   "fe-text" = { actlist_sort = "refnum"; };
 

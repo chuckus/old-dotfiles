@@ -3,7 +3,7 @@ export PATH=~/.dotfiles/bin:$PATH
 ZSH=$HOME/.dotfiles/libs/oh-my-zsh
 
 # Set name of the theme to load.
-DEFAULT_USER='smithr'
+DEFAULT_USER='csmith'
 ZSH_THEME="pygmalion"
 
 # Set to this to use case-sensitive completion
@@ -17,7 +17,7 @@ DISABLE_UPDATE_PROMPT="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git tmuxinator osx git-hubflow github gem bundler brew postgres tmux ssh-agent vundle vi-mode)
+plugins=(git vundle vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -64,3 +64,16 @@ function dotfiles() {
 
 src
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+pyenv virtualenvwrapper
+workon develop27
+
+export HTTP_PROXY=http://proxy.wno.mgnt:3128
+export http_proxy=http://proxy.wno.mgnt:3128
+export HTTPS_PROXY=http://proxy.wno.mgnt:3128
+export https_proxy=http://proxy.wno.mgnt:3128
+
+alias vless='vim -u /usr/share/vim/vim74/macros/less.vim'
+eval `dircolors ~/.dir_colors/dircolors.256dark`

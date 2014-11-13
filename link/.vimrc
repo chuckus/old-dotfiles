@@ -35,8 +35,10 @@ set expandtab
 
 " Color scheme
 set background=dark
+" let g:solarized_termcolors=256
+" let g:solarized_visibility = "high"
+" let g:solarized_contrast = "high"
 colorscheme solarized
-let g:solarized_termcolors=16
 
 set number
 set list
@@ -73,9 +75,6 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Workaround
 let g:CommandTTraverseSCM = 'pwd'
 let g:clang_user_options='|| exit 0'
-let g:ycm_auto_trigger = 1
-let g:ycm_confirm_extra_conf = 0
-let g:ycm_key_list_select_completion = ['<TAB>', '<Down>', '<Enter>']
 
 " Key binding for moving between panes
 map <C-j> <C-W>j
