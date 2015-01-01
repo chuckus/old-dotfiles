@@ -13,3 +13,5 @@ link/.vim/bundle
 *.log
 *notebook_secret
 *LOCAL*
+**/.ipython/**/security
+**/.ipython/**/db

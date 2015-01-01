@@ -2,27 +2,28 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#begin()
-Bundle 'gmarik/vundle'
-Bundle 'wincent/Command-T'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'tpope/vim-git'
-Bundle 'chriskempson/base16-vim'
-Bundle 'tpope/vim-surround'
-Bundle 'davidhalter/jedi-vim'
 Bundle 'bling/vim-airline'
+Bundle 'chase/vim-ansible-yaml'
+Bundle 'chriskempson/base16-vim'
+Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'edkolev/tmuxline.vim'
+Bundle 'gmarik/vundle'
+Bundle 'groenewege/vim-less'
+Bundle 'jalcine/cmake.vim'
+Plugin 'Keithbsmiley/swift.vim'
 Bundle "pangloss/vim-javascript"
 Bundle "Raimondi/delimitMate"
-Bundle 'scrooloose/nerdtree'
-Bundle 'jalcine/cmake.vim'
-Bundle 'Valloric/YouCompleteMe'
 Bundle 'rking/ag.vim'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'tpope/vim-fugitive'
+Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-dispatch'
-Bundle 'christoomey/vim-tmux-navigator'
-Bundle 'groenewege/vim-less'
-Plugin 'Keithbsmiley/swift.vim'
-"Bundle 'edkolev/tmuxline.vim'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-git'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'wincent/Command-T'
+Bundle 'wting/cheetah.vim'
 call vundle#end()
 filetype plugin indent on
 syntax enable
@@ -58,10 +59,6 @@ EOF
 
 " Enforce not using insert mode for navigation
 inoremap kj <Esc>
-" inoremap <Left>  <NOP>
-" inoremap <Right> <NOP>
-" inoremap <Up>    <NOP>
-" inoremap <Down>  <NOP>
 set timeoutlen=200
 :au FocusLost * :set number
 :au FocusGained * :set relativenumber
@@ -70,7 +67,7 @@ let g:airline_powerline_fonts = 1
 set laststatus=2
 
 autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Workaround
 let g:CommandTTraverseSCM = 'pwd'

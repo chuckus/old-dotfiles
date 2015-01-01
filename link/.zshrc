@@ -25,16 +25,6 @@ source $ZSH/oh-my-zsh.sh
 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
 
-# TODO: someone else config, might be vim related or efficient, look at some day
-# bindkey -v
-# bindkey -M vicmd "/" history-incremental-search-backward
-# bindkey '^R' history-incremental-search-backward
-# bindkey '^R' history-incremental-pattern-search-backward
-# bindkey '^[[A' up-line-or-search
-# bindkey '^[[B' down-line-or-search
-# bindkey '^?' backward-delete-char
-# bindkey '^h' backward-delete-char
-
 bindkey -v
 bindkey '^P' up-history
 bindkey '^N' down-history
@@ -74,6 +64,13 @@ export HTTP_PROXY=http://proxy.wno.mgnt:3128
 export http_proxy=http://proxy.wno.mgnt:3128
 export HTTPS_PROXY=http://proxy.wno.mgnt:3128
 export https_proxy=http://proxy.wno.mgnt:3128
+export no_proxy="localhost,.dev.wno.mgnt"
 
 alias vless='vim -u /usr/share/vim/vim74/macros/less.vim'
 eval `dircolors ~/.dir_colors/dircolors.256dark`
+export LD_LIBRARY_PATH=/usr/lib/oracle/12.1/client64/lib/
+export ORACLE_HOME=/usr/lib/oracle/12.1/client64/
+
+# ZSH VI hacks
+# No delay
+export KEYTIMEOUT=0
