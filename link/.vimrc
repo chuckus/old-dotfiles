@@ -8,7 +8,6 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-git'
 Bundle 'chriskempson/base16-vim'
 Bundle 'tpope/vim-surround'
-Bundle 'davidhalter/jedi-vim'
 Bundle 'bling/vim-airline'
 Bundle "pangloss/vim-javascript"
 Bundle "Raimondi/delimitMate"
@@ -73,7 +72,6 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Workaround
 let g:CommandTTraverseSCM = 'pwd'
 let g:clang_user_options='|| exit 0'
-let g:ycm_auto_trigger = 1
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_key_list_select_completion = ['<TAB>', '<Down>', '<Enter>']
 

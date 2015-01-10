@@ -18,8 +18,8 @@ cask install colorpicker-hex
 # Apps
 cask install gitx
 cask install iterm2
+# MYSQL app for Mac
 cask install sequel-pro
-cask install osxfuse
 cask install google-chrome
 cask install kindle
 cask install plex-media-server
