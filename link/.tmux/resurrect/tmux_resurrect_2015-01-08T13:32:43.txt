@@ -1,0 +1,14 @@
+pane	0	1	:inventory	0	:#-	1	:/home/csmith/work/local/fms-monitor-poll	0	zsh	:
+pane	0	1	:inventory	0	:#-	2	:/home/csmith/work/local/fms-monitor-poll	0	ssh	:ssh jenkins@build-trusty
+pane	0	1	:inventory	0	:#-	3	:/home/csmith/work/local/fms-monitor-poll	0	zsh	:
+pane	0	1	:inventory	0	:#-	4	:/home/csmith/work/portal-vagrant/fms_monitor_poll	1	ssh	:ssh fms@frigg
+pane	0	1	:inventory	0	:#-	5	:/home/csmith/work/portal-vagrant/fms_monitor_poll	0	ssh	:ssh fms@frigg
+pane	0	1	:inventory	0	:#-	6	:/home/csmith/work/local/fms-monitor-poll	0	ssh	:ssh inventory
+pane	0	1	:inventory	0	:#-	7	:/home/csmith/work/local/portal-ansible	0	ssh	:ssh fms@frigg
+pane	0	3	:..-monitor-poll	1	:*	1	:/home/csmith/work/local/kordia-lib	0	zsh	:
+pane	0	3	:..-monitor-poll	1	:*	2	:/home/csmith/work/local/fms-monitor-poll	0	zsh	:
+pane	0	3	:..-monitor-poll	1	:*	3	:/home/csmith/work/local/snmp-mibs/processed	1	zsh	:
+pane	0	3	:..-monitor-poll	1	:*	4	:/home/csmith/work/local	0	vim	:vim fms-driver-arbor/setup.py
+window	0	1	0	:#-	5934,274x68,0,0{137x68,0,0[137x13,0,0,10,137x12,0,14,11,137x8,0,27,9,137x16,0,36,2,137x15,0,53,6],136x68,138,0[136x34,138,0,1,136x33,138,35,3]}
+window	0	3	1	:*	76f0,274x68,0,0[274x17,0,0,12,274x16,0,18,15,274x33,0,35{137x33,0,35,13,136x33,138,35,17}]
+state	0	

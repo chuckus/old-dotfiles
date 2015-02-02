@@ -20,18 +20,29 @@ root: ~/work/portal-vagrant
 
 windows:
   - editor:
-    layout: tiled
-    panes:
-      - pyramid:
-        - cd pyramid; vagrant up; vagrant ssh
-        - cd ~/work/kordia-www-portal; paster serve src/kordia/www/portal/deploy/config/development.ini --reload
-      - wsoss:
-        - cd wsoss; vagrant up; vagrant ssh
-        - tail -F /var/log/apache2/error.log
-      - portalcache:
-        - cd portalcache; vagrant up; vagrant ssh
-        - python -m kordia.periodic.portalcache.cacher
-        - tail -F /var/log/kordia/periodic/portal_cache_poller_debug.log
-      - mongodb:
-        - cd mongodb; vagrant up; vagrant ssh;
-        - tail -F /var/log/mongodb/mongodb.log
+      layout: tiled
+      panes:
+        - pyramid:
+          - cd pyramid; vagrant up; vagrant ssh
+          - sudo /etc/init.d/networking restart
+          - cd ~/work/kordia-www-portal; paster serve src/kordia/www/portal/deploy/config/development.ini --reload
+        - wsoss:
+          - cd wsoss; vagrant up; vagrant ssh
+          - sudo /etc/init.d/networking restart
+          - tail -F /var/log/apache2/error.log
+        - portalcache:
+          - cd portalcache; vagrant up; vagrant ssh
+          - sudo /etc/init.d/networking restart
+          - python -m kordia.periodic.portalcache.cacher
+          - tail -F /var/log/kordia/periodic/portal_cache_poller_debug.log
+        - mongodb:
+          - cd mongodb; vagrant up; vagrant ssh;
+          - sudo /etc/init.d/networking restart
+          - tail -F /var/log/mongodb/mongodb.log
+        - zpr:
+          - cd zpr; vagrant up; vagrant ssh;
+          - sudo /etc/init.d/networking restart
+        - sftp:
+          - cd sftp; vagrant up; vagrant ssh;
+          - sudo /etc/init.d/networking restart
+

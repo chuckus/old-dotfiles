@@ -1,0 +1,12 @@
+pane	dev-portal	1	:zpr@rpc-services.csmith.dev.wno.mgnt	0	:#	1	:/home/csmith/work/portal-vagrant/pyramid	0	bash	:bash /usr/bin/vagrant ssh
+pane	dev-portal	1	:zpr@rpc-services.csmith.dev.wno.mgnt	0	:#	2	:/home/csmith/work/portal-vagrant/wsoss	0	bash	:bash /usr/bin/vagrant ssh
+pane	dev-portal	1	:zpr@rpc-services.csmith.dev.wno.mgnt	0	:#	3	:/home/csmith/work/portal-vagrant/portalcache	0	bash	:bash /usr/bin/vagrant ssh
+pane	dev-portal	1	:zpr@rpc-services.csmith.dev.wno.mgnt	0	:#	4	:/home/csmith/work/portal-vagrant/mongodb	0	bash	:bash /usr/bin/vagrant ssh
+pane	dev-portal	1	:zpr@rpc-services.csmith.dev.wno.mgnt	0	:#	5	:/home/csmith/work/portal-vagrant/zpr	0	ssh	:ssh zpr@rpc-services.csmith.dev.wno.mgnt
+pane	dev-portal	1	:zpr@rpc-services.csmith.dev.wno.mgnt	0	:#	6	:/home/csmith/work/portal-vagrant/sftp	1	zsh	:
+pane	dev-portal	2	:..ia-www-portal	0	:-	1	:/home/csmith/work/pyramid-dev/kordia-www-portal	1	zsh	:
+pane	dev-portal	3	:.._monitor_poll	1	:*	1	:/home/csmith/work/portal-vagrant/fms_monitor_poll	1	zsh	:
+window	dev-portal	1	0	:#	4da2,273x68,0,0[274x23,0,0{136x23,0,0,1,137x23,137,0,2},274x22,0,24{136x22,0,24,3,137x22,137,24,4},274x21,0,47{136x21,0,47,5,137x21,137,47,6}]
+window	dev-portal	2	0	:-	d264,274x68,0,0,7
+window	dev-portal	3	1	:*	6965,274x68,0,0,16
+state	dev-portal	dev-portal

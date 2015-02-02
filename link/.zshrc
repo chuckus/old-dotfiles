@@ -32,6 +32,7 @@ bindkey '^?' backward-delete-char
 bindkey '^h' backward-delete-char
 bindkey '^w' backward-kill-word
 bindkey '^r' history-incremental-search-backward
+# Makes keypress 'k' not put into stdin till another key besides 'j' is entered?
 bindkey -M viins 'kj' vi-cmd-mode
 
 
@@ -54,11 +55,7 @@ function dotfiles() {
 
 src
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-pyenv virtualenvwrapper
-workon develop27
+source /usr/local/bin/virtualenvwrapper.sh
 
 export HTTP_PROXY=http://proxy.wno.mgnt:3128
 export http_proxy=http://proxy.wno.mgnt:3128

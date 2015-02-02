@@ -28,3 +28,6 @@
 [submodule "libs/pyenv-virtualenvwrapper"]
 	path = libs/pyenv-virtualenvwrapper
 	url = https://github.com/yyuu/pyenv-virtualenvwrapper.git
+[submodule "link/.tmux/plugins/tpm"]
+	path = link/.tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
