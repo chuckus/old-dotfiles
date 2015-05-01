@@ -30,8 +30,8 @@ syntax enable
 
 " Default indent formatting
 set backspace=indent,eol,start
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
 " Color scheme

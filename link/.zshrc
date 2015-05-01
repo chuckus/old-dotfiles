@@ -61,7 +61,7 @@ export HTTP_PROXY=http://proxy.wno.mgnt:3128
 export http_proxy=http://proxy.wno.mgnt:3128
 export HTTPS_PROXY=http://proxy.wno.mgnt:3128
 export https_proxy=http://proxy.wno.mgnt:3128
-export no_proxy="localhost,.dev.wno.mgnt"
+export no_proxy="localhost,.mgnt"
 
 alias vless='vim -u /usr/share/vim/vim74/macros/less.vim'
 eval `dircolors ~/.dir_colors/dircolors.256dark`
@@ -71,3 +71,7 @@ export ORACLE_HOME=/usr/lib/oracle/12.1/client64/
 # ZSH VI hacks
 # No delay
 export KEYTIMEOUT=0
+export SQLPATH=$HOME/.oracle
+export RLWRAP_HOME=$HOME/.rlwrap
+
+# Get color working over ssh

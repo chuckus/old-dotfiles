@@ -20,4 +20,9 @@
     wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
     bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
     bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
-    amendreview = "git commit -a --amend --no-edit && git review staging"
+    amendreview = !git commit -a --amend --no-edit && git review staging
+    lg1 = log --graph --date=short --format=format:'%C(green)%h%C(reset) - %C(bold blue)%ad%C(reset) %C(white)%s%C(reset) %C(blue)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+    lg2 = log --graph --date=iso   --format=format:'%C(green)%h %C(bold cyan)%ad %C(bold blue)(%ar)%C(bold yellow)%d%n''  %C(white)%s %C(blue)- %an%C(reset)' --all
+    # lg3 shows which files were touched in each commit
+    lg3 = log --graph --date=iso   --format=format:'%C(green)%h %C(bold cyan)%ad %C(bold blue)(%ar)%C(bold yellow)%d%n''%C(reset)%B %C(blue)- %an%C(reset)' --all --stat
+    lg = !"git lg1"
