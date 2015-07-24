@@ -20,7 +20,6 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-dispatch'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'groenewege/vim-less'
-Plugin 'Keithbsmiley/swift.vim'
 Bundle 'edkolev/tmuxline.vim'
 call vundle#end()
 filetype plugin indent on
@@ -33,9 +32,13 @@ set shiftwidth=4
 set expandtab
 
 " Color scheme
-set background=dark
-colorscheme solarized
+"set background=dark
+"colorscheme solarized
 let g:solarized_termcolors=16
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
 
 set number
 set list

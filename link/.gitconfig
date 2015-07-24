@@ -1,6 +1,6 @@
 [user]
-	name = elmatrak
-	email = robert@elmatrak.me
+	name = Charlie Smith
+	email = charlie.smith@nowwot.co
 [core]
 	excludesfile = /Users/smithr/.gitignore_global
     editor = vim
