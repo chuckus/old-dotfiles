@@ -1,6 +1,6 @@
 [user]
 	name = Charlie Smith
-	email = charlie.smith@nowwot.co
+	email = charlie@nowwot.co
 [core]
 	excludesfile = /Users/smithr/.gitignore_global
     editor = vim

@@ -13,7 +13,7 @@ Bundle "pangloss/vim-javascript"
 Bundle "Raimondi/delimitMate"
 Bundle 'scrooloose/nerdtree'
 Bundle 'jalcine/cmake.vim'
-Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe'
 Bundle 'rking/ag.vim'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-fugitive'
@@ -32,13 +32,13 @@ set shiftwidth=4
 set expandtab
 
 " Color scheme
-"set background=dark
-"colorscheme solarized
-let g:solarized_termcolors=16
-if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
-  source ~/.vimrc_background
-endif
+set background=dark
+colorscheme solarized
+"let g:solarized_termcolors=16
+"if filereadable(expand("~/.vimrc_background"))
+"  let base16colorspace=256
+"  source ~/.vimrc_background
+"endif
 
 set number
 set list

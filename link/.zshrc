@@ -42,11 +42,7 @@ ZSH_THEME="pygmalion"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-<<<<<<< Updated upstream
-plugins=(git tmuxinator osx git-hubflow github gem bundler brew postgres tmux ssh-agent vundle vi-mode)
-=======
-plugins=(git rvm virtualenvwrapper vi-mode)
->>>>>>> Stashed changes
+plugins=(git osx brew vi-mode pyenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -73,8 +69,6 @@ bindkey '^w' backward-kill-word
 bindkey '^r' history-incremental-search-backward
 bindkey -M viins 'kj' vi-cmd-mode
 
-<<<<<<< Updated upstream
-
 # Source all files in ~/.dotfiles/source/
 function src() {
   local file
@@ -92,21 +86,16 @@ function dotfiles() {
   ~/.dotfiles/bin/dotfiles "$@" && src
 }
 
-eval "$(rbenv init -)"
 source ~/.profile
 alias tmux="TERM=screen-256color-bce tmux"
 
-#export PATH="$HOME/.pyenv/bin:$PATH"
-#eval "$(pyenv init -)"
-#eval "$(pyenv virtualenv-init -)"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-#pyenv virtualenvwrapper
-workon develop
 
-if [ -n "$PS1" ]; then # if statement guards adding these helpers for non-interative shells
-    eval "$(~/Work/external/base16-shell/profile_helper.sh)"
-fi
+# Below is to use auto-change shell color with base16
+# if [ -n "$PS1" ]; then # if statement guards adding these helpers for non-interative shells
+#     eval "$(~/Work/external/base16-shell/profile_helper.sh)"
+# fi
 
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+#if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
