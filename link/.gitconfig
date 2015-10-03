@@ -1,8 +1,8 @@
 [user]
 	name = Charlie Smith
-	email = charlie@nowwot.co
+	email = charlie@pensolve.com
 [core]
-	excludesfile = /Users/smithr/.gitignore_global
+	excludesfile = /Users/csmith/.gitignore_global
     editor = vim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"

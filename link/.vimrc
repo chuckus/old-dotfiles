@@ -13,7 +13,9 @@ Bundle "pangloss/vim-javascript"
 Bundle "Raimondi/delimitMate"
 Bundle 'scrooloose/nerdtree'
 Bundle 'jalcine/cmake.vim'
-Bundle 'Valloric/YouCompleteMe'
+" Can only have either YouCompleteMe or supertab
+"Bundle 'Valloric/YouCompleteMe'
+Bundle 'ervandew/supertab'
 Bundle 'rking/ag.vim'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-fugitive'
@@ -22,10 +24,16 @@ Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'groenewege/vim-less'
 Plugin 'Keithbsmiley/swift.vim'
 "Bundle 'edkolev/tmuxline.vim'
+" Rust completion plugin
+Plugin 'rust-lang/rust.vim'
+Plugin 'racer-rust/vim-racer'
 call vundle#end()
 filetype plugin indent on
 syntax enable
 
+
+" Omni complete (Ctrl-x, Ctrl-o in insert mode)
+set omnifunc=syntaxcomplete#Complete
 " Default indent formatting
 set backspace=indent,eol,start
 set tabstop=4
@@ -42,16 +50,16 @@ set list
 set listchars=tab:>.
 autocmd FileType cpp set tabstop=2|set shiftwidth=2|set expandtab
 " Add the virtualenv's site-packages to vim path
-py << EOF
-import os.path
-import sys
-import vim
-if 'VIRTUAL_ENV' in os.environ:
-    project_base_dir = os.environ['VIRTUAL_ENV']
-    sys.path.insert(0, project_base_dir)
-    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-    execfile(activate_this, dict(__file__=activate_this))
-EOF
+" py << EOF
+" import os.path
+" import sys
+" import vim
+" if 'VIRTUAL_ENV' in os.environ:
+"     project_base_dir = os.environ['VIRTUAL_ENV']
+"     sys.path.insert(0, project_base_dir)
+"     activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+"     execfile(activate_this, dict(__file__=activate_this))
+" EOF
 
 " Enforce not using insert mode for navigation
 inoremap kj <Esc>
@@ -84,3 +92,27 @@ map <C-l> <C-W>l
 :command Wq wq
 :command W w
 :command Q q
+
+" Configuration for Rust completion
+set hidden
+let g:racer_cmd = "/Users/csmith/work/rust/external/racer/target/release/racer"
+let $RUST_SRC_PATH="/Users/csmith/work/rust/rust/src"
+
+" Auto complete with Tab key
+" function! SuperCleverTab()
+"     if strpart(getline('.'), 0, col('.') - 1) =~ '^\s*$'
+"         return "\<Tab>"
+"     else
+"         if &omnifunc != ''
+"             return "\<C-X>\<C-O>"
+"         elseif &dictionary != ''
+"             return "\<C-K>"
+"         else
+"             return "\<C-N>"
+"         endif
+"     endif
+" endfunction
+" 
+" inoremap <Tab> <C-R>=SuperCleverTab()<cr>
+"
+let g:SuperTabDefaultCompletionType = "context"
