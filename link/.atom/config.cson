@@ -6,3 +6,9 @@
   core: {}
   editor:
     invisibles: {}
+    fontSize: 12
+  racer:
+    rustSrcPath: "/Users/csmith/work/rust/external/rust/src"
+    racerBinPath: "/Users/csmith/work/rust/external/racer/target/release/racer"
+  "vim-mode": {}
+  "linter-rust": {}

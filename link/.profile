@@ -1,5 +1,5 @@
 # $(npm bin -g)
-export PATH=$PATH:/usr/local/sbin:/Users/smithr/.node/bin:Applications/Xcode.app/Contents/Developer/usr/libexec/git-core/:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=$PATH:/usr/local/sbin:/Users/smithr/.node/bin:/usr/local/lib/node_modules/npm/bin/node-gyp-bin:Applications/Xcode.app/Contents/Developer/usr/libexec/git-core/:/usr/bin:/bin:/usr/sbin:/sbin
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 
