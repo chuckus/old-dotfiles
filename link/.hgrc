@@ -1,6 +1,6 @@
 [ui]
 # Name data to appear in commits
-username = Robert Smith <robert@elmatrak.me>
+username = Charlie Smith <charlie@pensolve.com>
 ssh = ssh -C
 ignore = ~/.hgignore
 verbose = True

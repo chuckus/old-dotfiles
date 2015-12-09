@@ -12,7 +12,7 @@ Bundle 'bling/vim-airline'
 Bundle "pangloss/vim-javascript"
 Bundle "Raimondi/delimitMate"
 Bundle 'scrooloose/nerdtree'
-Bundle 'jalcine/cmake.vim'
+" Bundle 'jalcine/cmake.vim'
 " Can only have either YouCompleteMe or supertab
 "Bundle 'Valloric/YouCompleteMe'
 Bundle 'ervandew/supertab'
@@ -22,11 +22,11 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-dispatch'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'groenewege/vim-less'
-Plugin 'Keithbsmiley/swift.vim'
+" Plugin 'Keithbsmiley/swift.vim'
 "Bundle 'edkolev/tmuxline.vim'
 " Rust completion plugin
-Plugin 'rust-lang/rust.vim'
-Plugin 'racer-rust/vim-racer'
+" Plugin 'rust-lang/rust.vim'
+" Plugin 'racer-rust/vim-racer'
 call vundle#end()
 filetype plugin indent on
 syntax enable
