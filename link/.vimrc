@@ -14,8 +14,8 @@ Bundle "Raimondi/delimitMate"
 Bundle 'scrooloose/nerdtree'
 " Bundle 'jalcine/cmake.vim'
 " Can only have either YouCompleteMe or supertab
-"Bundle 'Valloric/YouCompleteMe'
-Bundle 'ervandew/supertab'
+" Bundle 'Valloric/YouCompleteMe'
+"Bundle 'ervandew/supertab'
 Bundle 'rking/ag.vim'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-fugitive'

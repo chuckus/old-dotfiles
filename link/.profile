@@ -29,3 +29,9 @@ elif type complete &>/dev/null; then
   complete -F _azure_complette azure
 fi
 ### azure completion - end ###
+
+# Allow to install npm packages from location cache - useful if have shit internet
+alias npmoffline="npm --cache-min 9999999 "
+
+# Get debug information from the shell
+# setopt VERBOSE XTRACE

@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "node",
+    "/Users/csmith/work/node-repos/jupyter-nodejs/build/run.js",
+    "{connection_file}"
+  ],
+  "display_name": "NodeJS",
+  "language": "javascript"
+}

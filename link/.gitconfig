@@ -3,7 +3,7 @@
 	email = charlie@pensolve.com
 [core]
 	excludesfile = /Users/csmith/.gitignore_global
-    editor = vim
+	editor = /usr/local/bin/vim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 

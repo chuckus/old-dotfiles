@@ -1,4 +1,4 @@
-# load zgen
+#d zgen
 source "${HOME}/zgen/zgen.zsh"
 
 # check if there's no init script
@@ -19,6 +19,7 @@ if ! zgen saved; then
 
     # theme
     zgen load caiogondim/bullet-train-oh-my-zsh-theme bullet-train
+    # zgen load bhilburn/powerlevel9k powerlevel9k
 
     # save all to init script
     zgen save
@@ -55,9 +56,6 @@ source ~/.profile
 alias tmux="TERM=screen-256color-bce tmux"
 
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
 # Below is to use auto-change shell color with base16
 # if [ -n "$PS1" ]; then # if statement guards adding these helpers for non-interative shells
 #     eval "$(~/Work/external/base16-shell/profile_helper.sh)"
@@ -66,4 +64,13 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 #if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+# https://github.com/caiogondim/bullet-train-oh-my-zsh-theme
+export BULLETTRAIN_RUBY_SHOW=false
+export BULLETTRAIN_VIRTUALENV_SHOW=true
+export BULLETTRAIN_DIR_EXTENDED=2
+
+# https://github.com/bhilburn/powerlevel9k
+# export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs virtualenv)
+#
 source ~/.profile
