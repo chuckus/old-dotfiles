@@ -1,14 +1,19 @@
 "*":
+  core:
+    disabledPackages: [
+      "language-rust"
+      "linter-rust"
+      "racer"
+    ]
+  editor:
+    fontSize: 12
+    invisibles: {}
   "exception-reporting":
     userId: "d97c76cd-55eb-4da9-ac41-df4ba39d78e4"
+  "linter-rust": {}
+  racer:
+    racerBinPath: "/Users/csmith/work/rust/external/racer/target/release/racer"
+    rustSrcPath: "/Users/csmith/work/rust/external/rust/src"
+  "vim-mode": {}
   welcome:
     showOnStartup: false
-  core: {}
-  editor:
-    invisibles: {}
-    fontSize: 12
-  racer:
-    rustSrcPath: "/Users/csmith/work/rust/external/rust/src"
-    racerBinPath: "/Users/csmith/work/rust/external/racer/target/release/racer"
-  "vim-mode": {}
-  "linter-rust": {}

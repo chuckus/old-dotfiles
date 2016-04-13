@@ -74,3 +74,4 @@ export BULLETTRAIN_DIR_EXTENDED=2
 # export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs virtualenv)
 #
 source ~/.profile
+source ~/.bin/tmuxinator.zsh

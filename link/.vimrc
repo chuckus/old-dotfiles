@@ -22,6 +22,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-dispatch'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'groenewege/vim-less'
+Bundle 'elixir-lang/vim-elixir'
 " Plugin 'Keithbsmiley/swift.vim'
 "Bundle 'edkolev/tmuxline.vim'
 " Rust completion plugin

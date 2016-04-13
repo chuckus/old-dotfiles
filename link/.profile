@@ -35,3 +35,10 @@ alias npmoffline="npm --cache-min 9999999 "
 
 # Get debug information from the shell
 # setopt VERBOSE XTRACE
+
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+export EDITOR=vim
+export AZURE_STORAGE_ACCOUNT_NAME='devpensolve'
+export AZURE_STORAGE_ACCOUNT_KEY='mLpKvGKUlh1GkS+kZ02pEZxVoxoEH8WPSt91m8BvCsVEH2DymuwLK0PGjLbq0TGPhv2tZdNA5J6sMyU4h0qMGg=='
+export TEST_FOLDER_PATH="/Users/csmith/Google Drive/FC_Development/Product/Excel test files/integration_test_files/"
+export EXCEL_TEST_FILES_FOLDER_PATH="/Users/csmith/Google Drive/FC_Development/Product/Excel test files/"
