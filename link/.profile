@@ -42,3 +42,8 @@ export AZURE_STORAGE_ACCOUNT_NAME='devpensolve'
 export AZURE_STORAGE_ACCOUNT_KEY='mLpKvGKUlh1GkS+kZ02pEZxVoxoEH8WPSt91m8BvCsVEH2DymuwLK0PGjLbq0TGPhv2tZdNA5J6sMyU4h0qMGg=='
 export TEST_FOLDER_PATH="/Users/csmith/Google Drive/FC_Development/Product/Excel test files/integration_test_files/"
 export EXCEL_TEST_FILES_FOLDER_PATH="/Users/csmith/Google Drive/FC_Development/Product/Excel test files/"
+export DRONE_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZXh0IjoiY2hhcmxpZW1hcG9mYWciLCJ0eXBlIjoidXNlciJ9.H7UJejsDXvtVlNL4_TlGGQPGdtUkbz1gLzy3A0rM_aM"
+export DRONE_SERVER="http://52.63.195.231:8000/"
+export RANCHER_URL="http://rancher.farmmetrics.co.nz"
+export RANCHER_ACCESS_KEY="9B323B376D72D16C8716"
+export RANCHER_SECRET_KEY="ZnzKZwPtxU9YPr7YJRraFS1WmMz1ZtemrsxkHdTT"

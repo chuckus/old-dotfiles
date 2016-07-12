@@ -69,9 +69,14 @@ eval "$(pyenv virtualenv-init -)"
 export BULLETTRAIN_RUBY_SHOW=false
 export BULLETTRAIN_VIRTUALENV_SHOW=true
 export BULLETTRAIN_DIR_EXTENDED=2
+export BULLETTRAIN_NVM_SHOW=true
 
 # https://github.com/bhilburn/powerlevel9k
 # export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs virtualenv)
 #
 source ~/.profile
 source ~/.bin/tmuxinator.zsh
+
+export NVM_DIR="/Users/csmith/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+eval "$(direnv hook zsh)"
